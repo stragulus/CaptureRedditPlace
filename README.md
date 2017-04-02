@@ -21,4 +21,10 @@ If you want to do this every minute, you can do something like this:
 
     while : ; do python2 ./capture_reddit_place.py ; sleep 60 ; done
     
+Want to create an mp4 from the resulting images? Install ffmpeg, and then you can do something like this:
+
+    ffmpeg -framerate 5 -pattern_type glob -i 'theplace*.png' -c:v libx264 -preset slower -crf 18 -r 30 -pix_fmt yuv420p theplace.mp4
+
+This generates an mp4 with a 30 fps framerate, using 5 images per second of video.
+
 Enjoy!
