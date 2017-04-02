@@ -3,7 +3,7 @@ Save Reddit's /r/place canvas to a PNG file
 
 # Usage
 
-On a *nix system (OSX, linux), in a terminal, change to the directory where you checked out this repo. E.g. it should contain requirements.txt.
+On a *nix system (OSX, linux, cygwin/Windows), in a terminal, change to the directory where you checked out this repo. E.g. it should contain requirements.txt.
 
 From there, create a python2 virtual environment using the commands below. Note that one of the dependencies is Pillow, a python imaging library, which needs to compile code and thus requires more system depencies.
 
